@@ -1,2 +1,4 @@
 # Personal-Blog
 Personal Blog Challenge
+I am terrified of this challenge, but I am taking deep breaths and remaining calm. I used Command Line to create the directories and files to match the structure given in the assignment. Per Instructor Andrew Bautista's advice, I am going to code the index html first.
+I read on https://www.w3schools.com/tags/tag_label.asp  about the form, label, input, and button tags. And I am implementing them into my HTML.  These are semantic elements that will make the page more accessible and for browsers to properly load the page. In the index html page I am putting in the identifiers for the input field so that I can later target them with the JS. For the content part I used the element textarea because that allows for more than one line of text. I think I got the index html done. I ran the browser and it worked! Time for a Git Push! 
