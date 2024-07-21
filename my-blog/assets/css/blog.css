@@ -1,0 +1,19 @@
+#blog-posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#toggle-mode, #back-button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
