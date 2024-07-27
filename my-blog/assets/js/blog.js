@@ -17,3 +17,26 @@
 
 // Make another one to toggle dark mode. 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
+    const blogPostsContainer = document.getElementById('blog-posts');
+
+    blogPosts.forEach(function(post) {
+        const postElement = document.createElement('div');
+        postElement.className = 'blog-post';
+        postElement.innerHTML = `
+            <h2>${post.title}</h2>
+            <p>${post.content}</p>
+            <p>Posted by: ${post.username}</p>
+        `;
+        blogPostsContainer.appendChild(postElement);
+    });
+
+    document.getElementById('back-button').addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
+
+    document.getElementById('toggle-mode').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+});

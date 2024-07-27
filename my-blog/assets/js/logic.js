@@ -8,3 +8,14 @@
 
 // Save the Boolean value of darkmode to localStorage.
 
+document.addEventListener('DOMContentLoaded', function() {
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+    }
+
+    document.getElementById('toggle-mode').addEventListener('click', function() {
+        const isDarkMode = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode);
+    });
+});
