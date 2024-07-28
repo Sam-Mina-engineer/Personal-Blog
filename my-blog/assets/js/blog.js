@@ -36,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'index.html';
     });
 
-    document.getElementById('toggle-mode').addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
+    //document.getElementById('toggle-mode').addEventListener('click', function() {
+       // document.body.classList.toggle('dark-mode');
+// I commented out the above two lines because I already wrote this code in the logic.js page and the redudancy was creating the conflict
+//that prevented the toggle mode from working on the blog page. 
     });
-});
+;
